@@ -62,7 +62,7 @@ TEST_P(TestVehiculeRecenteRouler, Range)
     // ASSERT_THAT(0, Eq(0));
 }
 INSTANTIATE_TEST_SUITE_P(GroupVoitureRecente, TestVehiculeRecenteRouler, // test paramétré
-                         Values (0,10000,149999,150000,150001));
+                         Values (0,10000,50000,149999));
                         // Range (0,150000,10000));
 
 class TestOldvoitureRouler : public Test
