@@ -104,4 +104,6 @@ TEST_F(TestOldvoitureRouler, OK)
     int distance = 100;
     //when /then
     EXPECT_THROW(oldCar.rouler(distance),std::invalid_argument);
+    EXPECT_THAT(oldCar.kilometrage(),Eq(kmStart));
+    EXPECT_THAT(oldCar.jaugeCarburant(),Eq(jaugeStart));
 }
